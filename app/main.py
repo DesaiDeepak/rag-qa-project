@@ -1,5 +1,10 @@
 """FastAPI application entry point."""
 
+# IMPORTANT: Load .env file FIRST, before any LangChain imports
+# This ensures LangSmith environment variables are available for tracing
+from dotenv import load_dotenv
+load_dotenv()
+
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
