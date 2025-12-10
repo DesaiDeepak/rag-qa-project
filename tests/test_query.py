@@ -1,7 +1,5 @@
 """Tests for query endpoints."""
 
-from unittest.mock import MagicMock, patch
-
 
 class TestQueryEndpoints:
     """Test query API endpoints."""
